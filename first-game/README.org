@@ -1,0 +1,11 @@
+* first-game
++ _Juan Pablo Pérez <yohanam.paulus@gmail.com>_
+
+El primer juego trata de manejar un cubo azul que tiene que evitar cuadraditos
+rojos que representan parasitos y regoger cajitas verdes que representan frutas.
+
+** Controles
+| Izquierda         | Flecha Izuierda |
+| Derecha           | Flecha Derecha  |
+| Reiniciar partida | Ctrl+R          |
+

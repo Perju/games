@@ -1,0 +1,6 @@
+* Juegos
+Colección de juegos sencillos, en cada carpeta ire añadiendo un juego nuevo y en
+docs añadire toda la documentación que pueda aportar.
+
+Dentro de cada carpeta se encontrara un documento README.org donde se explica la
+mecanica del juego, la historia si la tiene, etc.
