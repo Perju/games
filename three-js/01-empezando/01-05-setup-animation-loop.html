@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module">
+      import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.129.0/build/three.module.js";
+      var renderer;
+      var scene;
+      var camera;
+
+      function init() {
+        // crea la escena que contendra todos los objetos, camaras y luces
+        scene = new THREE.Scene();
+
+        // crea una camara
+        camera = new THREE.PerspectiveCamera(
+          45,
+          window.innerWidth / window.innerHeight,
+          0.1,
+          1000
+        );
+
+        // crear en renderizador, establece el color de fondo y el tamaño
+        renderer = new THREE.WebGLRenderer();
+        renderer.setClearColor(0x000000, 1.0);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+
+        // crea un cubo y lo añade a la escena
+        var cubeGeometry = new THREE.BoxGeometry(
+          10 * Math.random(),
+          10 * Math.random(),
+          10 * Math.random()
+        );
+        var cubeMaterial = new THREE.MeshNormalMaterial();
+        var cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+        cube.name = "cube"; // un nombre para poder acceder mas tarde al cubo
+        scene.add(cube);
+
+        // posiciona la camara
+        camera.position.x = 15;
+        camera.position.y = 15;
+        camera.position.z = 15;
+        camera.lookAt(scene.position);
+
+        // añade el resultado de la renderización al elemento html
+        document.body.appendChild(renderer.domElement);
+
+        // llama a la función de renderizado
+        render();
+      }
+
+     function render() {
+       renderer.render(scene, camera);
+       scene.getObjectByName("cube").rotation.x += 0.05;
+       requestAnimationFrame(render);
+     }
+      window.onload = init;
+    </script>
+  </body>
+</html>
