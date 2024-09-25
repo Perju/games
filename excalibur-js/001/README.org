@@ -1,0 +1,7 @@
+* Esquiva y recoge
+Este trepidante juego se desarrolla en un universo en el que controlamos un
+cuadrado verde que solo puede moverse a la izquierda o a la derecha y caen otros
+cuadraditos mas pequeños. Hay que esquivar los cuadrados rojos que nos restaran
+una vida si los tocamos y terminara el juego si se acaban las tres vidas que
+tenemos, y por otra parte hay que recoger los cuadraditos verdes que sumaran un
+punto a nuestra puntuación.

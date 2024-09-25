@@ -1,0 +1,15 @@
+* Basic-games
+Juego que empieza siendo una plantilla para crear otros juegos y continua siendo
+una colección de juegos simples.
+
+** Instrucciones para compilar y lanzar
+Seguir los pasos dentro de la carpeta de cada uno de los juegos.
+
+1. Instalar las dependencias con `npm install`
+2. Compilar con `npm run build:prod`
+3. Lanzar `npm start`
+
+* Lista de juegos
+La lista de juegos, cada juego contiene un README con mas información.
+
+** 001 Esquivar y recoger
